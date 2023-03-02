@@ -91,6 +91,11 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'ecommerce.wsgi.application'
 
+# STATICFILES_DIRS = [BASE_DIR / 'static']
+STATICFILES_DIRS = [
+    os.path.join(REAL_BASE_DIR, 'build/static'),
+]
+
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
