@@ -12,9 +12,12 @@ ALLOWED_HOSTS = ['*']
 STATIC_URL = 'static/'
 
 # STATICFILES_DIRS = [BASE_DIR / 'static']
-STATICFILES_DIRS = (
-    os.path.join(REAL_BASE_DIR, 'frontend/build/static'),  # update the STATICFILES_DIRS
-)
+STATICFILES_DIRS = [
+    os.path.join(REAL_BASE_DIR, 'frontend/build/static'),
+]
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
@@ -22,4 +25,4 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Media files
 MEDIA_URL = 'uploads/'
 
-MEDIA_ROOT = BASE_DIR / 'uploads/'
+MEDIA_ROOT = REAL_BASE_DIR / 'uploads/'
