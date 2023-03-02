@@ -32,7 +32,7 @@ AWS_HEADERS = {'Access-Control-Allow-Origin': '*'}
 
 AWS_LOCATION = 'static'
 
-DEFAULT_FILE_STORAGE = 'optimus_project.settings.storage_backends.MediaStorage'
+DEFAULT_FILE_STORAGE = 'ecommerce.settings.storage_backends.MediaStorage'
 
 STATICFILES_STORAGE = 'storages.backends.s3boto3.S3StaticStorage'
 
