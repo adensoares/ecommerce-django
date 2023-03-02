@@ -13,7 +13,7 @@ STATIC_URL = 'static/'
 
 # STATICFILES_DIRS = [BASE_DIR / 'static']
 STATICFILES_DIRS = (
-    os.path.join(REAL_BASE_DIR, 'frontend', "build", "static"),  # update the STATICFILES_DIRS
+    os.path.join(REAL_BASE_DIR, 'frontend/build/static'),  # update the STATICFILES_DIRS
 )
 
 
