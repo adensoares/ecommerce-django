@@ -76,7 +76,7 @@ ROOT_URLCONF = 'ecommerce.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(REAL_BASE_DIR, 'build')],
+        'DIRS': [os.path.join(REAL_BASE_DIR / 'build/')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -123,6 +123,7 @@ DATABASES = {
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:8080',
     'http://localhost:3000',
+    'https://ecommerce-django.herokuapp.com',
 ]
 
 # Password validation
