@@ -11,7 +11,7 @@ from .serializers import ProductSerializer, CategorySerializer, OrderSerializer,
 
 
 def index(request):
-    return render(request, "build/index.html")
+    return render(request, "index.html")
 
 # Product
 class ProductViewSet(viewsets.ModelViewSet):
