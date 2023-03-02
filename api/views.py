@@ -10,6 +10,8 @@ from .models import Product, Category, Order, OrderItem
 from .serializers import ProductSerializer, CategorySerializer, OrderSerializer, OrderItemSerializer
 
 
+def index(request):
+    return render(request, "index.html")
 
 # Product
 class ProductViewSet(viewsets.ModelViewSet):
