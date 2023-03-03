@@ -22,8 +22,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "postinstall": "npm run build",
-    "serve": "serve build"
+    "postinstall": "serve build"
   },
   "engines": {
     "node": "14.21.3",
